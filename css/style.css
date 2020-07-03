@@ -470,6 +470,10 @@ table {
     background-color: #7DAF00;
 }
 
+.highlight-price{
+    background-color: #a06e40;
+}
+
 .button-primary{
     display:inline-block;
     padding:0.2em 1.45em;

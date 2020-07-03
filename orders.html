@@ -104,7 +104,7 @@
                         </thead>
                         <tbody>
                             <tr id="product-1">
-                                <td id="productName">Example 1</td>
+                                <td id="productName" scope="row">Example 1</td>
                                 <td id="prouctQuantity">Qauntity 1</td>
                                 <td id="productPrice">Price 1</td>
                                 <td id="productTotal">Total 1</td>
@@ -141,79 +141,93 @@
 
             <div class="col-6 border-top border-left border-bottom pb-5">
                 <form>
-                    <div class="form-row pt-3">
-                        <!-- Firstname -->
-                        <div class="form-group col-md-6">
-                            <label for="username">Firstname</label>
-                            <input type="text" class="form-control" id="Firstname" placeholder="Firstname">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div class="form-row pt-3">
+                                <!-- Firstname -->
+                                <div class="form-group col-md-12">
+                                    <label for="username">Firstname</label>
+                                    <input type="text" class="form-control" id="Firstname" placeholder="Firstname">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <!-- Lastname -->
+                                <div class="form-group col-md-12">
+                                    <label for="lastname">Lastname</label>
+                                    <input type="text" class="form-control" id="Lastname" placeholder="Lastname">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <!-- Contact Number -->
+                                <div class="form-group col-md-12">
+                                    <label for="contactNumber">Contact Number</label>
+                                    <input type="number" class="form-control" id="ContactNumber" placeholder="09**********">
+                                </div>
+                            </div>
+                            <!-- Address -->
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="inputAddress">Address</label>
+                                    <input type="textarea" class="form-control" id="inputAddress" placeholder="#, Street, Barangay">
+                                </div>
+                            </div>
+                            <!-- City -->
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="inputState">City</label>
+                                    <select id="inputState" class="form-control text-muted">
+                                        <option selected hidden=True>Select City</option>
+                                        <option>Baguio</option>
+                                        <option>Manila</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- Postal Code -->
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="inputZip">Zip/Postal Code</label>
+                                    <input type="text" class="form-control" id="inputZip" placeholder="ex: 2600 for Baguio">
+                                </div>
+                            </div>
                         </div>
-                        <!-- Date Picker -->
-                        <div class="form-group col-md-6">
-                            <label for="datepicker">Delivery Date</label>
-                            <input id="datepicker" placeholder="Click and Select Date">
+
+                        <div class="col-sm-7">
+                            <!-- start -->
+                            <div class="form-row pt-3">
+                                 <!-- Date Picker -->
+                                 <div class="form-group col-md-12">
+                                    <label for="datepicker">Delivery Date</label>
+                                    <input id="datepicker" placeholder="Click and Select Date">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <!-- Payment Method -->
+                                <div class="form-group col-md-12">
+                                    <label for="paymentMethod">Payment Method</label>
+                                    <select id="paymentMethod" class="form-control text-muted">
+                                        <option selected hidden=True>Select Payment Method</option>
+                                        <option>VISA</option>
+                                        <option>PayMaya</option>
+                                        <option>Paypal</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <!-- Shipping Method -->
+                                <div class="form-group col-md-12">
+                                    <label for="shippingMethod">Shipping Method</label>
+                                    <select id="shippingMethod" class="form-control text-muted">
+                                        <option selected hidden=True>Select Shipping Method</option>
+                                        <option>Barko</option>
+                                        <option>Eroplano</option>
+                                        <option>Helicopter</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-row">
-                        <!-- Lastname -->
-                        <div class="form-group col-md-6">
-                            <label for="lastname">Lastname</label>
-                            <input type="text" class="form-control" id="Lastname" placeholder="Lastname">
+                        <div class="text-right col-10">
+                            <button type="submit" class="button-primary text-light">Save</button>
                         </div>
-                        <!-- Payment Method -->
-                        <div class="form-group col-md-6">
-                            <label for="paymentMethod">Payment Method</label>
-                            <select id="paymentMethod" class="form-control text-muted">
-                                <option selected hidden=True>Select Payment Method</option>
-                                <option>VISA</option>
-                                <option>PayMaya</option>
-                                <option>Paypal</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <!-- Contact Number -->
-                        <div class="form-group col-md-6">
-                            <label for="contactNumber">Contact Number</label>
-                            <input type="number" class="form-control" id="ContactNumber" placeholder="09**********">
-                        </div>
-                        <!-- Shipping Method -->
-                        <div class="form-group col-md-6">
-                            <label for="shippingMethod">Shipping Method</label>
-                            <select id="shippingMethod" class="form-control text-muted">
-                                <option selected hidden=True>Select Shipping Method</option>
-                                <option>Barko</option>
-                                <option>Eroplano</option>
-                                <option>Helicopter</option>
-                            </select>
-                        </div>
-                    </div>
-                    <!-- Address -->
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="inputAddress">Address</label>
-                            <input type="textarea" class="form-control" id="inputAddress" placeholder="#, Street, Barangay">
-                        </div>
-                    </div>
-                    <!-- City -->
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="inputState">City</label>
-                            <select id="inputState" class="form-control text-muted">
-                                <option selected hidden=True>Select City</option>
-                                <option>Baguio</option>
-                                <option>Manila</option>
-                            </select>
-                        </div>
-                    </div>
-                    <!-- Postal Code -->
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="inputZip">Zip/Postal Code</label>
-                            <input type="text" class="form-control" id="inputZip" placeholder="ex: 2600 for Baguio">
-                        </div>
-                    </div>
-                    <div class="text-right col-10">
-                        <button type="submit" class="button-primary text-light">Save</button>
                     </div>
                 </form>
             </div>

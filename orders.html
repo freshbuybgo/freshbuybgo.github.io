@@ -75,7 +75,7 @@
                 </div>
                 <form action="">
                     <div class="form-row">
-                        <div class="form-group col-6">
+                        <div class="form-group col-md-6">
                             <select id="selectedProduct" class="form-control text-muted">
                             <option selected hidden=True>Select Product</option>
                             <option>Tubig</option>
@@ -83,10 +83,10 @@
                             <option>Langis</option>
                             </select>
                         </div>
-                        <div class="form-group col-3">
+                        <div class="form-group col-md-3">
                             <input type="number" class="form-control" id="productQuantity" placeholder="Qauntity">
                         </div>
-                        <div class="form-group col-3 ">
+                        <div class="form-group col-md-3 ">
                             <button type="submit" class="button-primary text-light">Add</button>
                         </div>
                     </div>
@@ -95,7 +95,7 @@
                     <table class="table border-left border-right">
                         <thead class="table-head-color">
                             <tr>
-                                <th scope="col-3">Product</th>
+                                <th scope="col">Product</th>
                                 <th scope="col">Qauntity</th>
                                 <th scope="col">Price</th>
                                 <th scope="col">Total</th>
@@ -128,13 +128,13 @@
                     </table>
                 </div>
                 <hr>
-                <div class="row">
-                    <p class="col-4">Shipping fee</p>
-                    <p class="col-3 text-right">₱ 500</p>
+                <div class="row pr-3">
+                    <p class="col-6">Shipping fee</p>
+                    <p class="col-6 highlight-green text-light text-right">₱ 500</p>
                 </div>
-                <div class="row lead">
-                    <h4 class="col-4">Total</h4>
-                    <p class="col-3 highlight-green rounded-pill text-light text-right">₱ 10,000</p>
+                <div class="row lead pr-3">
+                    <h4 class="col-6">Total</h4>
+                    <p class="col-6 highlight-green text-light text-right">₱10,000</p>
                 </div>
             </div>
 
@@ -148,7 +148,7 @@
                             <input type="text" class="form-control" id="Firstname" placeholder="Firstname">
                         </div>
                         <!-- Date Picker -->
-                        <div class="form-group col-md-6 pl-5">
+                        <div class="form-group col-md-6">
                             <label for="datepicker">Delivery Date</label>
                             <input id="datepicker" placeholder="Click and Select Date">
                         </div>
@@ -160,7 +160,7 @@
                             <input type="text" class="form-control" id="Lastname" placeholder="Lastname">
                         </div>
                         <!-- Payment Method -->
-                        <div class="form-group col-6 pl-5">
+                        <div class="form-group col-md-6">
                             <label for="paymentMethod">Payment Method</label>
                             <select id="paymentMethod" class="form-control text-muted">
                                 <option selected hidden=True>Select Payment Method</option>
@@ -177,7 +177,7 @@
                             <input type="number" class="form-control" id="ContactNumber" placeholder="09**********">
                         </div>
                         <!-- Shipping Method -->
-                        <div class="form-group col-md-6 pl-5">
+                        <div class="form-group col-md-6">
                             <label for="shippingMethod">Shipping Method</label>
                             <select id="shippingMethod" class="form-control text-muted">
                                 <option selected hidden=True>Select Shipping Method</option>
@@ -189,14 +189,14 @@
                     </div>
                     <!-- Address -->
                     <div class="form-row">
-                        <div class="form-group col-6">
+                        <div class="form-group col-md-6">
                             <label for="inputAddress">Address</label>
                             <input type="textarea" class="form-control" id="inputAddress" placeholder="#, Street, Barangay">
                         </div>
                     </div>
                     <!-- City -->
                     <div class="form-row">
-                        <div class="form-group col-6">
+                        <div class="form-group col-md-6">
                             <label for="inputState">City</label>
                             <select id="inputState" class="form-control text-muted">
                                 <option selected hidden=True>Select City</option>
@@ -207,7 +207,7 @@
                     </div>
                     <!-- Postal Code -->
                     <div class="form-row">
-                        <div class="form-group col-6">
+                        <div class="form-group col-md-6">
                             <label for="inputZip">Zip/Postal Code</label>
                             <input type="text" class="form-control" id="inputZip" placeholder="ex: 2600 for Baguio">
                         </div>

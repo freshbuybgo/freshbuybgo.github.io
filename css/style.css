@@ -482,7 +482,7 @@ table {
     color:green;
     background-color:#7DAF00;
     text-align:center;
-    position:absolute;
+    position:relative;
 }
 .button-primary:hover{
     border-color: green;

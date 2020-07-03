@@ -477,7 +477,7 @@ table {
 .button-primary{
     display:inline-block;
     padding:0.2em 1.45em;
-    margin:0.1em;
+    margin:0;
     border:0.15em solid #7DAF00;
     box-sizing: border-box;
     text-decoration:none;
@@ -487,6 +487,7 @@ table {
     background-color:#7DAF00;
     text-align:center;
     position:relative;
+    width: 100%;
 }
 .button-primary:hover{
     border-color: green;
@@ -513,8 +514,8 @@ main, body, html{
 
 /* @media print */
 @media print{
-    .mobile-bottom-nav, .viewing, a, .text-right, i, .record-header, .hide-print, table, h5{
-        display: none;
+    .mobile-bottom-nav, .viewing, a, .text-right, i, .record-header, .hide-print, table, h5, .modal-dialog{
+        opacity: 3;
     }
     td, th{
         color: black !important;
@@ -527,3 +528,4 @@ main, body, html{
         margin: 0;
     }
 }
+

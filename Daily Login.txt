@@ -1,4 +1,9 @@
-7/3/2019
+7/3/2020
  - 9:00-9:30 Meeting and Task giving
  - 9:30-1:00 Place order form done 
  - 1:00-6:00 Edited color and tweaked some icons
+ - 6:00-8:00 Fixed forms postioning for mobile viewing
+
+7/4/2020
+ - 9:30-10:30 Added tooltips, Tweaked Input Arrows/Spinners, Adjusted th text color
+ - 10:30

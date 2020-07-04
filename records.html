@@ -83,7 +83,7 @@
         </div>
         <div class="table-responsive">
           <table class="table border-left border-right">
-            <thead class="table-head-color">
+            <thead class="table-head-color text-light">
               <tr>
                 <th scope="col">ID</th>
                 <th scope="col">Date</th>
@@ -104,7 +104,14 @@
                 <td data-title="Total: "><span>₱</span> 50,000</td>
                 <td data-title="Payment Method: ">Cash On Delivery</td>
                 <td data-title="Status: "><span class="stat bg-agent"> Waiting for Agent's Call </span></td>
-                <td data-title="Actions:" class="text-right"><a href="" onclick="window.print();return false;" media = "print"><i style="font-size:20px" class="fa pr-2">&#xf02f;</i></a><a href="#"><span class="material-icons">visibility</span></a></td>
+                <td data-title="Actions:" class="text-right">
+                  <a href="" onclick="window.print();return false;" media = "print">
+                    <i style="font-size:20px" class="fa pr-2" data-toggle="tooltip" title="Print">&#xf02f;</i>
+                  </a>
+                  <a href="" data-toggle="tooltip" title="View">
+                    <span class="material-icons">visibility</span>
+                  </a>
+                </td>              
               </tr>
               <tr>
                 <th scope="row" data-title="ID">00002</th>
@@ -114,7 +121,14 @@
                 <td data-title="Total: "><span>₱</span> 50,000</td>
                 <td data-title="Payment Method: ">Cash On Delivery</td>
                 <td data-title="Status: "><span class="stat bg-cancelled"> Cancelled </span></td>
-                <td data-title="Actions:" class="text-right"><a href="" onclick="window.print();return false;" media = "print"><i style="font-size:20px" class="fa pr-2">&#xf02f;</i></a><a href="#"><span class="material-icons">visibility</span></a></td>
+                <td data-title="Actions:" class="text-right">
+                  <a href="" onclick="window.print();return false;" media = "print">
+                    <i style="font-size:20px" class="fa pr-2" data-toggle="tooltip" title="Print">&#xf02f;</i>
+                  </a>
+                  <a href="" data-toggle="tooltip" title="View">
+                    <span class="material-icons">visibility</span>
+                  </a>
+                </td>                     
               </tr>
               <tr>
                 <th scope="row" data-title="ID">00003</th>
@@ -124,7 +138,14 @@
                 <td data-title="Total: "><span>₱</span> 50,000</td>
                 <td data-title="Payment Method: ">Cash On Delivery</td>
                 <td data-title="Status: "><span class="stat bg-completed"> Completed </span></td>
-                <td data-title="Actions:" class="text-right"><a href="" onclick="window.print();return false;" media = "print"><i style="font-size:20px" class="fa pr-2">&#xf02f;</i></a><a href="#"><span class="material-icons">visibility</span></a></td>
+                <td data-title="Actions:" class="text-right">
+                  <a href="" onclick="window.print();return false;" media = "print">
+                    <i style="font-size:20px" class="fa pr-2" data-toggle="tooltip" title="Print">&#xf02f;</i>
+                  </a>
+                  <a href="" data-toggle="tooltip" title="View">
+                    <span class="material-icons">visibility</span>
+                  </a>
+                </td>        
               </tr>
               <tr>
                 <th scope="row" data-title="ID">00004</th>
@@ -134,7 +155,14 @@
                 <td data-title="Total: "><span>₱</span> 50,000</td>
                 <td data-title="Payment Method: ">Cash On Delivery</td>
                 <td data-title="Status: "><span class="stat bg-processing"> Processing Order</span></td>
-                <td data-title="Actions:" class="text-right"><a href="" onclick="window.print();return false;" media = "print"><i style="font-size:24px" class="fa pr-2">&#xf0d1;</i></a><a href="#"><span class="material-icons">visibility</span></a></td>
+                <td data-title="Actions:" class="text-right">
+                  <a href="" onclick="window.print();return false;" media = "print">
+                    <i style="font-size:24px" class="fa pr-2" data-toggle="tooltip" title="Processing Order">&#xf0d1;</i>
+                  </a>
+                  <a href="" data-toggle="tooltip" title="View">
+                    <span class="material-icons">visibility</span>
+                  </a>
+                </td>
               </tr>
               <tr>
                 <th scope="row" data-title="ID">00005</th>
@@ -144,7 +172,14 @@
                 <td data-title="Total: "><span>₱</span> 50,000</td>
                 <td data-title="Payment Method: ">Cash On Delivery</td>
                 <td data-title="Status: "><span class="stat bg-pending turn-black"> Waiting for Payment </span></td>
-                <td data-title="Actions:" class="text-right"><a href="" data-toggle="modal" data-target="#paymentMethod"><i style="font-size:24px" class="fa pr-2">&#xf09d;</i></a><a href="#"><span class="material-icons">visibility</span></a></td>
+                <td data-title="Actions:" class="text-right">
+                  <a href="" data-toggle="modal" data-target="#paymentMethod">
+                    <i style="font-size:24px" class="fa pr-2" data-toggle="tooltip" title="Payment">&#xf09d;</i>
+                  </a>
+                  <a href="" data-toggle="tooltip" title="View">
+                    <span class="material-icons">visibility</span>
+                  </a>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -208,6 +243,9 @@
   <script>
     $('#datepicker').datepicker({
         uiLibrary: 'bootstrap4'
+    });
+    $(function (){
+        $('[data-toggle="tooltip"]').tooltip();
     });
   </script>
   <script src="./js/jquery.min.js"></script>

@@ -512,6 +512,19 @@ main, body, html{
     background-color: #eec186;
 }
 
+/* Remove Arrow/Spinners */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 /* @media print */
 @media print{
     .mobile-bottom-nav, .viewing, a, .text-right, i, .record-header, .hide-print, table, h5, .modal-dialog{
@@ -528,4 +541,5 @@ main, body, html{
         margin: 0;
     }
 }
+
 

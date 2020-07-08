@@ -108,8 +108,8 @@
                   <a href="" onclick="window.print();return false;" media = "print">
                     <i style="font-size:20px" class="fa pr-2" data-toggle="tooltip" title="Print">&#xf02f;</i>
                   </a>
-                  <a href="" data-toggle="tooltip" title="View">
-                    <span class="material-icons">visibility</span>
+                  <a href="" data-toggle="modal" title="View" data-target="#viewModal" >
+                    <span class="material-icons" data-toggle="tooltip" title="View">visibility</span>
                   </a>
                 </td>              
               </tr>
@@ -125,8 +125,8 @@
                   <a href="" onclick="window.print();return false;" media = "print">
                     <i style="font-size:20px" class="fa pr-2" data-toggle="tooltip" title="Print">&#xf02f;</i>
                   </a>
-                  <a href="" data-toggle="tooltip" title="View">
-                    <span class="material-icons">visibility</span>
+                  <a href="" data-toggle="modal" title="View" data-target="#viewModal" >
+                    <span class="material-icons" data-toggle="tooltip" title="View">visibility</span>
                   </a>
                 </td>                     
               </tr>
@@ -142,8 +142,8 @@
                   <a href="" onclick="window.print();return false;" media = "print">
                     <i style="font-size:20px" class="fa pr-2" data-toggle="tooltip" title="Print">&#xf02f;</i>
                   </a>
-                  <a href="" data-toggle="tooltip" title="View">
-                    <span class="material-icons">visibility</span>
+                  <a href="" data-toggle="modal" title="View" data-target="#viewModal" >
+                    <span class="material-icons" data-toggle="tooltip" title="View">visibility</span>
                   </a>
                 </td>        
               </tr>
@@ -159,8 +159,8 @@
                   <a href="" onclick="window.print();return false;" media = "print">
                     <i style="font-size:24px" class="fa pr-2" data-toggle="tooltip" title="Processing Order">&#xf0d1;</i>
                   </a>
-                  <a href="" data-toggle="tooltip" title="View">
-                    <span class="material-icons">visibility</span>
+                  <a href="" data-toggle="modal" title="View" data-target="#viewModal" >
+                    <span class="material-icons" data-toggle="tooltip" title="View">visibility</span>
                   </a>
                 </td>
               </tr>
@@ -176,8 +176,8 @@
                   <a href="" data-toggle="modal" data-target="#paymentMethod">
                     <i style="font-size:24px" class="fa pr-2" data-toggle="tooltip" title="Payment">&#xf09d;</i>
                   </a>
-                  <a href="" data-toggle="tooltip" title="View">
-                    <span class="material-icons">visibility</span>
+                  <a href="" data-toggle="modal" title="View" data-target="#viewModal" >
+                    <span class="material-icons" data-toggle="tooltip" title="View">visibility</span>
                   </a>
                 </td>
               </tr>
@@ -231,6 +231,32 @@
               </div>
             </div>
           </div>
+          <!-- Modal for view details -->
+          <!-- Modal -->
+          <div class="modal fade" id="viewModal" tabindex="-1" role="dialog" aria-labelledby="viewModal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Order Details</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <p><b>ID:</b> 00001</p>
+                    <p><b>Date:</b> June 6,2020</p>
+                    <p><b>Customer Name:</b> Juan Dela Cruz</p>
+                    <p><b>Delivery Address:</b> Baguio City</p>
+                    <p><b>Total:</b> ₱ 50,000</p>
+                    <p><b>Payment Method:</b> Cash On Delivery</p>
+                    <p><b>Status:</b> Waiting for Agent's Call</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="button-primary text-light" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -259,6 +285,7 @@
         $('[data-toggle="tooltip"]').tooltip();
     });
   </script>
+  <script src="./js/vue.js"></script>
   <script src="./js/jquery.min.js"></script>
   <script src="./js/popper.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>

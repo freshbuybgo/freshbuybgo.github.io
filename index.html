@@ -183,8 +183,8 @@
                         <td data-title="Quantity">10 </td>
                         <td data-title="Price"> P150.00 </td>
                         <td data-title="Actions:" class="text-right">
-                          <a href="#" data-toggle="tooltip" title="View">
-                            <span class="material-icons">visibility</span>
+                          <a href="" data-toggle="modal" title="View" data-target="#viewModal" >
+                            <span class="material-icons" data-toggle="tooltip" title="View">visibility</span>
                           </a>
                         </td>
                       </tr>
@@ -196,8 +196,8 @@
                         <td data-title="Quantity">10 </td>
                         <td data-title="Price"> P150.00 </td>
                         <td data-title="Actions:" class="text-right">
-                          <a href="#" data-toggle="tooltip" title="View">
-                            <span class="material-icons">visibility</span>
+                          <a href="" data-toggle="modal" title="View" data-target="#viewModal" >
+                            <span class="material-icons" data-toggle="tooltip" title="View">visibility</span>
                           </a>
                         </td>                      
                       </tr>
@@ -209,8 +209,8 @@
                         <td data-title="Quantity">10 </td>
                         <td data-title="Price"> P150.00 </td>
                         <td data-title="Actions:" class="text-right">
-                          <a href="#" data-toggle="tooltip" title="View">
-                            <span class="material-icons">visibility</span>
+                          <a href="" data-toggle="modal" title="View" data-target="#viewModal" >
+                            <span class="material-icons" data-toggle="tooltip" title="View">visibility</span>
                           </a>
                         </td>                      
                       </tr>
@@ -222,8 +222,8 @@
                         <td data-title="Quantity">10 </td>
                         <td data-title="Price"> P150.00 </td>
                         <td data-title="Actions:" class="text-right">
-                          <a href="#" data-toggle="tooltip" title="View">
-                            <span class="material-icons">visibility</span>
+                          <a href="" data-toggle="modal" title="View" data-target="#viewModal" >
+                            <span class="material-icons" data-toggle="tooltip" title="View">visibility</span>
                           </a>
                         </td>                      
                       </tr>
@@ -235,8 +235,8 @@
                         <td data-title="Quantity">10 </td>
                         <td data-title="Price"> P150.00 </td>
                         <td data-title="Actions:" class="text-right">
-                          <a href="#" data-toggle="tooltip" title="View">
-                            <span class="material-icons">visibility</span>
+                          <a href="" data-toggle="modal" title="View" data-target="#viewModal" >
+                            <span class="material-icons" data-toggle="tooltip" title="View">visibility</span>
                           </a>
                         </td>                      
                       </tr>
@@ -246,13 +246,33 @@
               </div>
             </div>
           </div>
-
-
-
-          </div>
         </div>
     </div>
   </main>
+
+  <div class="modal fade" id="viewModal" tabindex="-1" role="dialog" aria-labelledby="viewModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Order Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p><b>ID:</b> 00001</p>
+            <p><b>Date:</b> June 6,2020</p>
+            <p><b>Customer Name:</b> Juan Dela Cruz</p>
+            <p><b>Product Name:</b> Ube Halaya</p>
+            <p><b>Quantity:</b> 10</p>
+            <p><b>Price</b> P150.00	</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="button-primary text-light" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
   
   <script src="./js/jquery.min.js"></script>
